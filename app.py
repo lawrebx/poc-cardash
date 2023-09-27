@@ -1,11 +1,8 @@
 from dash import Dash, html, dcc, Input, Output, callback
 import plotly.express as px
 import pandas as pd
-import os
-import sys
 
-file_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-df_base = pd.read_csv(f"{file_path}/sample_data.csv")
+df_base = pd.read_csv(f"sample_data.csv")
 
 def generate_table(dataframe, max_rows=10):
     return html.Table([
