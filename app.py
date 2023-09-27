@@ -26,7 +26,7 @@ df = df_base
 
 
 
-app.layout = html.Div(children=[
+dash_app.layout = html.Div(children=[
     html.H1(children='Welcome to Garbage Data LLC'),
 
     html.Div(children='''
