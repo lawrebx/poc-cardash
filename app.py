@@ -16,7 +16,9 @@ def generate_table(dataframe, max_rows=10):
         ])
     ])
 
-app = Dash(__name__)
+dash_app = Dash(__name__)
+
+app = dash_app.server
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
